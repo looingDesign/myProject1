@@ -4,36 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/reset.css">
     <title>扁平化建筑网站</title>
-    <style>
-        #li{
-            overflow: hidden;
-            transition: 2s;
-        }
-    </style>
 </head>
 <body>
     <div id="nav">导航</div>
-    <div id="li">
-        <div>第1个div</div>
-        <div>第2个div</div>
-        <div>第3个div</div>
-        <div>第4个div</div>
-        <div>第5个div</div>
-        <div>第6个div</div>
-    </div>
-    <script>
-        var nav = document.getElementById('nav');
-        var li = document.getElementById('li');
-        var height =  window.getComputedStyle(li).height;
-        console.log(height);
-        li.style.height = height;
-        function change(){
-            
-            li.style.height =  0 + 'px';
-            // li.style.transition =  2 + 's';      
-        }
-        nav.addEventListener('click',change);
-    </script>
+    
+    <script src="Js/myProject1.js"></script>
 </body>
 </html>
