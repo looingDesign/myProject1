@@ -1,0 +1,8 @@
+#li {
+  overflow: hidden;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+#li div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=main.min.css.map */
