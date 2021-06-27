@@ -1,8 +1,63 @@
-#li {
-  overflow: hidden;
-  -webkit-transition: 2s;
-  transition: 2s;
+body {
+  position: relative;
 }
-#li div:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}/*# sourceMappingURL=main.min.css.map */
+
+.headLine {
+  width: 100%;
+  height: 42px;
+  padding: 1px 0;
+  background-color: RGBA(195, 220, 232, 0.7);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+
+.headLine .headLineBox {
+  width: 1140px;
+  height: 22px;
+  line-height: 22px;
+  text-align: right;
+  margin: 11px auto;
+}
+
+.headLine .headLineBox span {
+  margin-left: 15px;
+  color: RGB(97, 97, 97);
+  font-size: 16px;
+}
+
+.headTop {
+  width: 1540px;
+  height: 700px;
+  position: relative;
+  top: -42px;
+  z-index: 1;
+  margin: 0 auto;
+  background: white url("../Images/m1.jpg") no-repeat 0 0/cover;
+}
+
+.headTop .headContent {
+  width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.headTop .headContent .headForm {
+  width: 376px;
+  height: 477px;
+  background-color: sandybrown;
+  position: absolute;
+  top: 150px;
+  overflow: hidden;
+}
+
+.headTop .headContent .headForm .headFormContent {
+  width: 312px;
+  height: 377px;
+  background-color: blueviolet;
+  margin: 30px auto;
+}
+/*# sourceMappingURL=main.min.css.map */
