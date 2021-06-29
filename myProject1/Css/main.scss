@@ -1,18 +1,26 @@
+$widthBox:1140px;
+$widthOUtBox:1540px;
+
 body{
     position: relative;
+    background: transparent url(../Images/b1.jpg) no-repeat 0 0/cover fixed;
+    overflow-x: hidden;
 }
+
+// 头部区域
 .headLine{
     width: 100%;
     height: 42px;
     // background-color: red;
     padding: 1px 0;
-    background-color: RGBA(195,220,232,0.7);
+    background-color: RGBA(195,220,232,0.8);
     // line-height: 42px;
     position: absolute;
     z-index: 10;
     top: 0;
+    box-shadow: 0 5px 20px RGB(141,163,175);
     .headLineBox{
-        width: 1140px;
+        width: $widthBox;
         height: 22px;
         line-height: 22px;
         text-align: right;
@@ -21,38 +29,446 @@ body{
             margin-left: 15px;
             color: RGB(97,97,97);
             font-size: 16px;
+            transition: 0.4s;
+        }
+        a span:hover{
+            color: rgba($color: #fff, $alpha: 0.9);
         }
     }
 }
-.headTop{
-    width: 1540px;
-    height: 700px;
-    position: relative;
-    top: -42px;
-    z-index: 1;
-    margin: 0 auto;
-    background: white url('../Images/m1.jpg') no-repeat 0 0/cover;
-    .headContent{
-        width: 1140px;
-        height: 100%;
-        margin: 0 auto;
-        background-color: rgba($color: #fff, $alpha: 0.6);
-        position: relative;
-        overflow: hidden;
-        .headForm{
-            width: 376px;
-            height: 477px;
-            background-color: sandybrown;
-            position: absolute;
-            top: 150px;
-            overflow: hidden;
-            .headFormContent{
-                width: 312px;
-                height: 377px;
-                background-color: blueviolet;
-                margin: 30px auto;
+.headTopBox{
+    width: 100%;
+    background: white url('../Images/a1.jpg') no-repeat 0 0/cover;
 
+
+    .headTop{
+        width: $widthOUtBox;
+        height: 700px;
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        
+    
+        .headContent{
+            width: $widthBox;
+            height: 100%;
+            margin: 0 auto;
+            // background-color: rgba($color: #fff, $alpha: 0.6);
+            position: relative;
+            overflow: hidden;
+            // padding: 30px 20px;
+    
+            .headForm{
+                width: 406px;
+                height: 477px;
+                background-color: rgba($color: #fff, $alpha: 0.8);
+                position: absolute;
+                top: 150px;
+                left: 0;
+                overflow: hidden;
+    
+                .headFormContent{
+                    width: 322px;
+                    height: 417px;
+                    // background-color: blueviolet;
+                    margin: 30px auto;
+    
+                    input{
+                        width: 100%;
+                        height: 50px;
+                        line-height: 50px;
+                        outline: none;
+                        border: none;
+                        margin-bottom: 20px;
+                        padding: 10px 10px;
+                        font-size: 18px;
+                        box-sizing: border-box;
+                        color: RGB(90,91,90);
+                        border-bottom: 3px solid RGB(23,169,238);
+                        background-color: transparent;
+                    }
+    
+                    button{
+                        width: 100px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        outline: none;
+                        border: none;
+                        color: rgba($color: #fff, $alpha: 0.8);
+                        background-color: RGBA(151,204,35,0.8);
+                        cursor: pointer;
+                        transition: 0.6s;
+                        &:hover{
+                            background-color: RGBA(22,169,239,0.8);
+                        }
+                    }
+    
+                    .headLogin{
+                        width: 100%;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 16px;
+                        color:RGB(90,91,90);
+                        margin-top: 20px;
+                        a>span{
+                            color: RGB(22,169,238);
+                            transition: 0.5s;
+                        }
+                        a>span:hover{
+                            color: rgba(216, 64, 64,0.9);
+                        }
+                    }
+    
+                }
+            }
+        }
+        
+    }
+}
+
+
+// 导航区域
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: RGB(22,169,239);
+
+    .navOutBox{
+        width: $widthOUtBox;
+        height: 80px;
+        line-height: 80px;
+        margin: 0 auto;
+
+        .navBox{
+            width: $widthBox;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            // background-color: saddlebrown;
+            .navLogin{
+                // display: inline-block;
+                font-size: 40px;
+                color: rgba($color: #fff, $alpha: 1);
+                margin-left: 20px;
+            }
+
+            .navContent{
+                // display: inline-block;
+                // margin-right: 0;
+                // background-color: red;
+                .navContentUl{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    font-size: 20px;
+                    width: 500px;
+                    height: 80px;
+                    
+                    // line-height: 80px;
+
+                    li{
+                        width: 80px;
+                        height: 80px;
+                        line-height: 80px;
+                        // background-color: rosybrown;
+                        position: relative;
+                        text-align: center;
+                        a{
+                            color: rgba($color: #fff, $alpha: 1);
+                            font-weight: 500;
+                            letter-spacing: 5px;
+    
+                        }
+                        .navLiColor{
+                            color: rgba($color: #000, $alpha: 1);
+                        }
+                        .navLiLine{
+                            position: absolute;
+                            width: 80px;
+                            height: 4px;
+                            top: 20px;
+                            left: 0;
+                            transform: rotateY(90deg);
+                            background-color: rgba($color: #fff, $alpha: 1);
+                            transition: 0.7s;
+                        }
+                        a:hover~.navLiLine{
+                            transform: rotateY(0deg);
+                        }
+                    }
+                }
             }
         }
     }
+    
+}
+
+// 图片展示区域
+.picture{
+    width: 100%;
+    height: 900px;
+    background-color: white;
+    .pictureOutBox{
+        width: $widthOUtBox;
+        height: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+        // background-color: red;
+    
+        .pictureBox{
+            width: $widthBox;
+            height: 800px;
+            // background-color: aquamarine;
+            margin: 100px auto;
+    
+            .pictureHead{
+                font-size: 40px;
+                text-align: center;
+                color: RGB(152,205,35);
+                letter-spacing: 3px;
+                // background-color: red;
+                height: 120px;
+                position: relative;
+    
+                .pictureHeadLine{
+                    width: 150px;
+                    height: 2px;
+                    background-color: rgba($color: #000, $alpha: 0.7);
+                    position: absolute;
+                    top: 70px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+    
+            .pictureContentBox{
+                width: 100%;
+                height: 500px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+    
+                .picture1{
+                    width: 740px;
+                    border: 5px solid white;
+                    margin-bottom: 25px;
+                    box-shadow: 0 0 40px RGB(222,222,222);
+                    // box-sizing: border-box;
+                }
+    
+                .picture2{
+                    width: 350px;
+                    border: 5px solid white;
+                    margin-bottom: 25px;
+                    box-shadow: 0 0 40px RGB(222,222,222);
+                }
+            }
+        }
+    }
+}
+
+// 表单区域
+$evaheight:700px;
+.evaluate{
+    width: 100%;
+    height: $evaheight;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    // background-color: transparent;
+
+    .evaluateOutBox{
+        width: $widthOUtBox;
+        height: $evaheight;
+        margin: 0 auto;
+
+        .evaluateBox{
+            width: $widthBox;
+            height: $evaheight;
+            // background-color: aquamarine;
+            margin: 0 auto;
+            overflow: hidden;
+
+            .evaluateHead{
+                width: 100%;
+                height: 100px;
+                margin-top: 30px;
+                text-align: center;
+                font-size: 40px;
+                color: white;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    // height: 3px;
+                    width: 150px;
+                    border-bottom: 3px solid white;
+                    position: absolute;
+                    left: 50%;
+                    top: 60px;
+                    transform: translateX(-50%);
+                    box-shadow: 0 0 2px white;
+                }
+            }
+            .evaluateContentBox{
+                width: 100%;
+                height: 500px;
+                // background-color: RGB(78,83,89);
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+
+                .evaluateForm{
+                    width: 380px;
+                    height: 450px;
+                    background-color: RGB(22,168,238);
+                    padding: 20px;
+                    box-sizing: border-box;
+
+                    h3{
+                        font-size: 18px;
+                        font-weight: normal;
+                        height: 40px;
+                        line-height: 40px;
+                        color: rgba($color: #fff, $alpha: 0.9);
+                    }
+                    .evaForm_all{
+                        padding-left: 5px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 16px;
+                        color: RGBA(195,220,232,1);
+                    }
+                    .evaForm_1{
+                        width: 100%;           
+                        margin-bottom: 20px;
+                        
+                    }
+                    .evaForm_2Box{
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        justify-content: space-between;
+ 
+                        .evaForm_2{
+                            width: 160px;
+               
+                        }
+                    }
+
+                    .evaFormRoom{
+                        width: 100%;
+                        height: 90px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        .evaFormRoomDiv{
+                            width: 160px;
+                            height: 90px;
+
+                            input{
+                                width: 100%;
+                                box-sizing: border-box;
+                            }
+                        }
+
+                        
+                    }
+                    .evaFormPrice{
+                        text-align: center;
+                    }
+                    .evaFind{
+                        width: 100%;
+                        height: 60px;
+                        line-height: 60px;
+                        text-align: center;
+                        font-size: 18px;
+                        color: white;
+                        background-color: RGB(151,204,35);
+                        margin-top: 20px;
+                        transition: 0.5s;
+
+                        &:hover{
+                            background-color: RGB(78,83,89);
+                        }
+                    }
+                }
+                .evaluaterCarousel{
+                    width: 1140px - 380px;
+                    height: 420px;
+                    // background-color: blueviolet;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+
+
+                    .evaH4{
+                        // background-color: yellow;
+                        width: 100%;
+                        height: 60px;
+                        color: RGB(151,204,35);
+
+                        h4{
+                            font-size: 30px;
+                        }
+                    }
+                    .evaCarousel{
+                        width: 750px;
+                        height: 271px;
+                        background-color: bisque;
+
+                        .evaCarouselBox{
+                            width: 315px;
+                            height: 271px;
+                            background-color: red;
+
+                            // .evaSlice{
+                            //    width: 100%;
+                            //    height: 200px; 
+                            //    padding: 20px;
+                            //    line-height: 20px;
+                            // }
+                            // .evaSlicePeople{
+                            //     width: 100%;
+                            //     height: 71px;
+                            //     line-height: 30%;
+                            //     background-color: blue;
+
+                            //     img{
+                            //         width: 60px;
+                            //         height: 60px;
+                            //         border-radius: 50%;
+                            //     }
+                            // }
+
+                        }
+                    }
+                    .evaRight{
+                        width: 100%;
+                        text-align: right;
+                        font-size: 16px;
+                        // padding-right: 40px;
+                        // background-color: red;
+                        
+                        &>div{
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            display: inline-block;
+                            font-size: 30px;
+                            border: 1px solid RGB(151,204,35);
+                            color: RGB(222,222,222);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
