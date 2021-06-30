@@ -1,191 +1,194 @@
 $widthBox:1140px;
-$widthOUtBox:1540px;
 
-body{
+body {
     position: relative;
     background: transparent url(../Images/b1.jpg) no-repeat 0 0/cover fixed;
     overflow-x: hidden;
 }
 
 // 头部区域
-.headLine{
+.headLine {
     width: 100%;
     height: 42px;
     // background-color: red;
     padding: 1px 0;
-    background-color: RGBA(195,220,232,0.8);
+    background-color: RGBA(195, 220, 232, 0.8);
     // line-height: 42px;
     position: absolute;
     z-index: 10;
     top: 0;
-    box-shadow: 0 5px 20px RGB(141,163,175);
-    .headLineBox{
+    box-shadow: 0 5px 20px RGB(141, 163, 175);
+
+    .headLineBox {
         width: $widthBox;
         height: 22px;
         line-height: 22px;
         text-align: right;
         margin: 11px auto;
-        span{
+
+        span {
             margin-left: 15px;
-            color: RGB(97,97,97);
+            color: RGB(97, 97, 97);
             font-size: 16px;
             transition: 0.4s;
         }
-        a span:hover{
+
+        a span:hover {
             color: rgba($color: #fff, $alpha: 0.9);
         }
     }
 }
-.headTopBox{
+
+.headTopBox {
     width: 100%;
+    height: 800px;
+    // background-color: red;
+    // position: relative;
     background: white url('../Images/a1.jpg') no-repeat 0 0/cover;
 
-
-    .headTop{
-        width: $widthOUtBox;
-        height: 700px;
-        position: relative;
-        z-index: 1;
+    .headContent {
+        width: $widthBox;
+        height: 100%;
         margin: 0 auto;
-        
-    
-        .headContent{
-            width: $widthBox;
-            height: 100%;
-            margin: 0 auto;
-            // background-color: rgba($color: #fff, $alpha: 0.6);
-            position: relative;
+        // background-color: rgba($color: #fff, $alpha: 0.6);
+        position: relative;
+        overflow: hidden;
+        // padding: 30px 20px;
+
+        .headForm {
+            width: 406px;
+            height: 477px;
+            background-color: rgba($color: #fff, $alpha: 0.8);
+            position: absolute;
+            top: 150px;
+            left: 0;
             overflow: hidden;
-            // padding: 30px 20px;
-    
-            .headForm{
-                width: 406px;
-                height: 477px;
-                background-color: rgba($color: #fff, $alpha: 0.8);
-                position: absolute;
-                top: 150px;
-                left: 0;
-                overflow: hidden;
-    
-                .headFormContent{
-                    width: 322px;
-                    height: 417px;
-                    // background-color: blueviolet;
-                    margin: 30px auto;
-    
-                    input{
-                        width: 100%;
-                        height: 50px;
-                        line-height: 50px;
-                        outline: none;
-                        border: none;
-                        margin-bottom: 20px;
-                        padding: 10px 10px;
-                        font-size: 18px;
-                        box-sizing: border-box;
-                        color: RGB(90,91,90);
-                        border-bottom: 3px solid RGB(23,169,238);
-                        background-color: transparent;
+
+            .headFormContent {
+                width: 322px;
+                height: 417px;
+                // background-color: blueviolet;
+                margin: 30px auto;
+
+                input {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    border: none;
+                    margin-bottom: 20px;
+                    padding: 10px 10px;
+                    font-size: 18px;
+                    box-sizing: border-box;
+                    color: RGB(90, 91, 90);
+                    border-bottom: 3px solid RGB(23, 169, 238);
+                    background-color: transparent;
+                }
+
+                button {
+                    width: 100px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    outline: none;
+                    border: none;
+                    color: rgba($color: #fff, $alpha: 0.8);
+                    background-color: RGBA(151, 204, 35, 0.8);
+                    cursor: pointer;
+                    transition: 0.6s;
+
+                    &:hover {
+                        background-color: RGBA(22, 169, 239, 0.8);
                     }
-    
-                    button{
-                        width: 100px;
-                        height: 50px;
-                        line-height: 50px;
-                        font-size: 20px;
-                        font-weight: 500;
-                        outline: none;
-                        border: none;
-                        color: rgba($color: #fff, $alpha: 0.8);
-                        background-color: RGBA(151,204,35,0.8);
-                        cursor: pointer;
-                        transition: 0.6s;
-                        &:hover{
-                            background-color: RGBA(22,169,239,0.8);
-                        }
+                }
+
+                .headLogin {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 16px;
+                    color: RGB(90, 91, 90);
+                    margin-top: 20px;
+
+                    a>span {
+                        color: RGB(22, 169, 238);
+                        transition: 0.5s;
                     }
-    
-                    .headLogin{
-                        width: 100%;
-                        height: 40px;
-                        line-height: 40px;
-                        font-size: 16px;
-                        color:RGB(90,91,90);
-                        margin-top: 20px;
-                        a>span{
-                            color: RGB(22,169,238);
-                            transition: 0.5s;
-                        }
-                        a>span:hover{
-                            color: rgba(216, 64, 64,0.9);
-                        }
+
+                    a>span:hover {
+                        color: rgba(216, 64, 64, 0.9);
                     }
-    
                 }
             }
         }
-        
     }
+
 }
 
 
 // 导航区域
-nav{
+nav {
     width: 100%;
     height: 80px;
-    background-color: RGB(22,169,239);
+    background-color: RGB(22, 169, 239);
 
-    .navOutBox{
-        width: $widthOUtBox;
+    .navOutBox {
+        width: $widthBox;
         height: 80px;
         line-height: 80px;
         margin: 0 auto;
 
-        .navBox{
+        .navBox {
             width: $widthBox;
             height: 100%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
+
             // background-color: saddlebrown;
-            .navLogin{
+            .navLogin {
                 // display: inline-block;
                 font-size: 40px;
                 color: rgba($color: #fff, $alpha: 1);
                 margin-left: 20px;
             }
 
-            .navContent{
+            .navContent {
+
                 // display: inline-block;
                 // margin-right: 0;
                 // background-color: red;
-                .navContentUl{
+                .navContentUl {
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
                     font-size: 20px;
                     width: 500px;
                     height: 80px;
-                    
+
                     // line-height: 80px;
 
-                    li{
+                    li {
                         width: 80px;
                         height: 80px;
                         line-height: 80px;
                         // background-color: rosybrown;
                         position: relative;
                         text-align: center;
-                        a{
+
+                        a {
                             color: rgba($color: #fff, $alpha: 1);
                             font-weight: 500;
                             letter-spacing: 5px;
-    
+
                         }
-                        .navLiColor{
+
+                        .navLiColor {
                             color: rgba($color: #000, $alpha: 1);
                         }
-                        .navLiLine{
+
+                        .navLiLine {
                             position: absolute;
                             width: 80px;
                             height: 4px;
@@ -195,7 +198,8 @@ nav{
                             background-color: rgba($color: #fff, $alpha: 1);
                             transition: 0.7s;
                         }
-                        a:hover~.navLiLine{
+
+                        a:hover~.navLiLine {
                             transform: rotateY(0deg);
                         }
                     }
@@ -203,37 +207,38 @@ nav{
             }
         }
     }
-    
+
 }
 
 // 图片展示区域
-.picture{
+.picture {
     width: 100%;
     height: 900px;
     background-color: white;
-    .pictureOutBox{
-        width: $widthOUtBox;
+
+    .pictureOutBox {
+        width: $widthBox;
         height: 900px;
         margin: 0 auto;
         overflow: hidden;
         // background-color: red;
-    
-        .pictureBox{
+
+        .pictureBox {
             width: $widthBox;
             height: 800px;
             // background-color: aquamarine;
             margin: 100px auto;
-    
-            .pictureHead{
+
+            .pictureHead {
                 font-size: 40px;
                 text-align: center;
-                color: RGB(152,205,35);
+                color: RGB(152, 205, 35);
                 letter-spacing: 3px;
                 // background-color: red;
                 height: 120px;
                 position: relative;
-    
-                .pictureHeadLine{
+
+                .pictureHeadLine {
                     width: 150px;
                     height: 2px;
                     background-color: rgba($color: #000, $alpha: 0.7);
@@ -243,27 +248,27 @@ nav{
                     transform: translateX(-50%);
                 }
             }
-    
-            .pictureContentBox{
+
+            .pictureContentBox {
                 width: 100%;
                 height: 500px;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
-    
-                .picture1{
+
+                .picture1 {
                     width: 740px;
                     border: 5px solid white;
                     margin-bottom: 25px;
-                    box-shadow: 0 0 40px RGB(222,222,222);
+                    box-shadow: 0 0 40px RGB(222, 222, 222);
                     // box-sizing: border-box;
                 }
-    
-                .picture2{
+
+                .picture2 {
                     width: 350px;
                     border: 5px solid white;
                     margin-bottom: 25px;
-                    box-shadow: 0 0 40px RGB(222,222,222);
+                    box-shadow: 0 0 40px RGB(222, 222, 222);
                 }
             }
         }
@@ -272,25 +277,26 @@ nav{
 
 // 表单区域
 $evaheight:700px;
-.evaluate{
+
+.evaluate {
     width: 100%;
     height: $evaheight;
     background-color: rgba($color: #000000, $alpha: 0.5);
     // background-color: transparent;
 
-    .evaluateOutBox{
-        width: $widthOUtBox;
+    .evaluateOutBox {
+        width: $widthBox;
         height: $evaheight;
         margin: 0 auto;
 
-        .evaluateBox{
+        .evaluateBox {
             width: $widthBox;
             height: $evaheight;
             // background-color: aquamarine;
             margin: 0 auto;
             overflow: hidden;
 
-            .evaluateHead{
+            .evaluateHead {
                 width: 100%;
                 height: 100px;
                 margin-top: 30px;
@@ -299,7 +305,7 @@ $evaheight:700px;
                 color: white;
                 position: relative;
 
-                &::after{
+                &::after {
                     content: '';
                     // height: 3px;
                     width: 150px;
@@ -311,164 +317,206 @@ $evaheight:700px;
                     box-shadow: 0 0 2px white;
                 }
             }
-            .evaluateContentBox{
+
+            .evaluateContentBox {
                 width: 100%;
-                height: 500px;
+                height: 450px;
                 // background-color: RGB(78,83,89);
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
 
-
-                .evaluateForm{
+                // 评估表单区域
+                .evaluateForm {
                     width: 380px;
                     height: 450px;
-                    background-color: RGB(22,168,238);
+                    background-color: RGB(22, 168, 238);
                     padding: 20px;
                     box-sizing: border-box;
 
-                    h3{
+                    h3 {
                         font-size: 18px;
                         font-weight: normal;
                         height: 40px;
                         line-height: 40px;
                         color: rgba($color: #fff, $alpha: 0.9);
                     }
-                    .evaForm_all{
+
+                    .evaForm_all {
                         padding-left: 5px;
                         height: 40px;
                         line-height: 40px;
                         font-size: 16px;
-                        color: RGBA(195,220,232,1);
+                        color: RGBA(195, 220, 232, 1);
                     }
-                    .evaForm_1{
-                        width: 100%;           
+
+                    .evaForm_1 {
+                        width: 100%;
                         margin-bottom: 20px;
-                        
+
                     }
-                    .evaForm_2Box{
+
+                    .evaForm_2Box {
                         width: 100%;
                         height: 40px;
                         display: flex;
                         justify-content: space-between;
- 
-                        .evaForm_2{
+
+                        .evaForm_2 {
                             width: 160px;
-               
+
                         }
                     }
 
-                    .evaFormRoom{
+                    .evaFormRoom {
                         width: 100%;
                         height: 90px;
                         display: flex;
                         justify-content: space-between;
                         flex-wrap: wrap;
 
-                        .evaFormRoomDiv{
+                        .evaFormRoomDiv {
                             width: 160px;
                             height: 90px;
 
-                            input{
+                            input {
                                 width: 100%;
                                 box-sizing: border-box;
                             }
                         }
 
-                        
+
                     }
-                    .evaFormPrice{
+
+                    .evaFormPrice {
                         text-align: center;
                     }
-                    .evaFind{
+
+                    .evaFind {
                         width: 100%;
                         height: 60px;
                         line-height: 60px;
                         text-align: center;
                         font-size: 18px;
                         color: white;
-                        background-color: RGB(151,204,35);
+                        background-color: RGB(151, 204, 35);
                         margin-top: 20px;
                         transition: 0.5s;
 
-                        &:hover{
-                            background-color: RGB(78,83,89);
+                        &:hover {
+                            background-color: RGB(78, 83, 89);
                         }
                     }
                 }
-                .evaluaterCarousel{
-                    width: 1140px - 380px;
-                    height: 420px;
-                    // background-color: blueviolet;
+
+                // 滑动区域
+                .eva_main{
+                    width: 740px;
+                    height: 100%;
+                    // background-color: aqua;
                     display: flex;
-                    align-items: flex-start;
-                    flex-wrap: wrap;
-                    padding-left: 10px;
-                    box-sizing: border-box;
+                    flex-direction: column;
 
-
-                    .evaH4{
-                        // background-color: yellow;
+                    .eva_top{
                         width: 100%;
                         height: 60px;
-                        color: RGB(151,204,35);
+                        text-align: left;
+                        color: RGB(151, 204, 35);
+                        font-size: 40px;
 
-                        h4{
-                            font-size: 30px;
-                        }
                     }
-                    .evaCarousel{
-                        width: 750px;
-                        height: 271px;
-                        background-color: bisque;
-
-                        .evaCarouselBox{
-                            width: 315px;
-                            height: 271px;
-                            background-color: red;
-
-                            // .evaSlice{
-                            //    width: 100%;
-                            //    height: 200px; 
-                            //    padding: 20px;
-                            //    line-height: 20px;
-                            // }
-                            // .evaSlicePeople{
-                            //     width: 100%;
-                            //     height: 71px;
-                            //     line-height: 30%;
-                            //     background-color: blue;
-
-                            //     img{
-                            //         width: 60px;
-                            //         height: 60px;
-                            //         border-radius: 50%;
-                            //     }
-                            // }
-
-                        }
-                    }
-                    .evaRight{
-                        width: 100%;
-                        text-align: right;
-                        font-size: 16px;
-                        // padding-right: 40px;
+                    .eva_mid{
+                        width: auto;
+                        height: 250px;
                         // background-color: red;
+                        padding-top: 20px;
+                        white-space: nowrap;
+                        overflow: hidden;
+
+                        .eva_mid_d{
+                            width: 360px;
+                            height: 100%;
+                            display: inline-block;
+                            // background-color: pink;
+                            margin-right: 15px;
+                            overflow: hidden;
+
+                            .emid_d_co{
+                                width: auto;
+                                height: 150px;
+                                margin: 0;
+                                padding: 30px 40px 0 30px;
+                                white-space: normal;
+                                // word-wrap: normal;
+                                color: black;
+                                font-size: 14px;
+                                background-color: white;
+                                box-sizing: border-box;
+                                line-height: 30px; 
+                            }
+                            .emid_d_im{
+                                width: auto;
+                                height: 100px;
+                                // background-color: black;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                align-items: center;
+                                // padding-right: 20px;
+                                box-sizing: border-box;
+
+                                .emid_dim_d{
+                                    // width: ;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-items: flex-end;
+                                    align-items: center;
+                                    margin-right: 10px;
+
+                                    .emid_d_1{
+                                        font-size: 18px;
+                                        color: RGB(22, 169, 239);
+                                    }
+                                    .emid_d_2{
+                                        font-size: 14px;
+                                        color: white;
+                                    }
+                                    address{
+                                        padding: 0 5px;
+                                    }
+                                }
+                                img{
+                                    width: 70px;
+                                    height: 70px;
+                                    border-radius: 50%;
+                                }
+                                
+                            }
+                        }
+
+                    }
+                    .eva_bot{
+                        width: auto;
+                        height: 70px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: flex-start;
                         
-                        &>div{
+                        .e_bot_com{
                             width: 40px;
                             height: 40px;
-                            line-height: 40px;
+                            border: 2px solid RGB(151, 204, 35);
+                            color: white;
+                            font-size: 25px;
+                            vertical-align: middle;
                             text-align: center;
-                            display: inline-block;
-                            font-size: 30px;
-                            border: 1px solid RGB(151,204,35);
-                            color: RGB(222,222,222);
+                            margin-left: 15px;
                         }
+
                     }
                 }
             }
         }
     }
-
 }

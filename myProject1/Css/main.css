@@ -33,23 +33,17 @@ body {
 
 .headTopBox {
   width: 100%;
+  height: 800px;
   background: white url("../Images/a1.jpg") no-repeat 0 0/cover;
 }
-.headTopBox .headTop {
-  width: 1540px;
-  height: 700px;
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-}
-.headTopBox .headTop .headContent {
+.headTopBox .headContent {
   width: 1140px;
   height: 100%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
-.headTopBox .headTop .headContent .headForm {
+.headTopBox .headContent .headForm {
   width: 406px;
   height: 477px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -58,12 +52,12 @@ body {
   left: 0;
   overflow: hidden;
 }
-.headTopBox .headTop .headContent .headForm .headFormContent {
+.headTopBox .headContent .headForm .headFormContent {
   width: 322px;
   height: 417px;
   margin: 30px auto;
 }
-.headTopBox .headTop .headContent .headForm .headFormContent input {
+.headTopBox .headContent .headForm .headFormContent input {
   width: 100%;
   height: 50px;
   line-height: 50px;
@@ -77,7 +71,7 @@ body {
   border-bottom: 3px solid RGB(23, 169, 238);
   background-color: transparent;
 }
-.headTopBox .headTop .headContent .headForm .headFormContent button {
+.headTopBox .headContent .headForm .headFormContent button {
   width: 100px;
   height: 50px;
   line-height: 50px;
@@ -90,10 +84,10 @@ body {
   cursor: pointer;
   transition: 0.6s;
 }
-.headTopBox .headTop .headContent .headForm .headFormContent button:hover {
+.headTopBox .headContent .headForm .headFormContent button:hover {
   background-color: RGBA(22, 169, 239, 0.8);
 }
-.headTopBox .headTop .headContent .headForm .headFormContent .headLogin {
+.headTopBox .headContent .headForm .headFormContent .headLogin {
   width: 100%;
   height: 40px;
   line-height: 40px;
@@ -101,11 +95,11 @@ body {
   color: RGB(90, 91, 90);
   margin-top: 20px;
 }
-.headTopBox .headTop .headContent .headForm .headFormContent .headLogin a > span {
+.headTopBox .headContent .headForm .headFormContent .headLogin a > span {
   color: RGB(22, 169, 238);
   transition: 0.5s;
 }
-.headTopBox .headTop .headContent .headForm .headFormContent .headLogin a > span:hover {
+.headTopBox .headContent .headForm .headFormContent .headLogin a > span:hover {
   color: rgba(216, 64, 64, 0.9);
 }
 
@@ -115,7 +109,7 @@ nav {
   background-color: RGB(22, 169, 239);
 }
 nav .navOutBox {
-  width: 1540px;
+  width: 1140px;
   height: 80px;
   line-height: 80px;
   margin: 0 auto;
@@ -175,7 +169,7 @@ nav .navOutBox .navBox .navContent .navContentUl li a:hover ~ .navLiLine {
   background-color: white;
 }
 .picture .pictureOutBox {
-  width: 1540px;
+  width: 1140px;
   height: 900px;
   margin: 0 auto;
   overflow: hidden;
@@ -228,7 +222,7 @@ nav .navOutBox .navBox .navContent .navContentUl li a:hover ~ .navLiLine {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .evaluate .evaluateOutBox {
-  width: 1540px;
+  width: 1140px;
   height: 700px;
   margin: 0 auto;
 }
@@ -259,7 +253,7 @@ nav .navOutBox .navBox .navContent .navContentUl li a:hover ~ .navLiLine {
 }
 .evaluate .evaluateOutBox .evaluateBox .evaluateContentBox {
   width: 100%;
-  height: 500px;
+  height: 450px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -330,45 +324,92 @@ nav .navOutBox .navBox .navContent .navContentUl li a:hover ~ .navLiLine {
 .evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .evaluateForm .evaFind:hover {
   background-color: RGB(78, 83, 89);
 }
-.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .evaluaterCarousel {
-  width: 760px;
-  height: 420px;
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main {
+  width: 740px;
+  height: 100%;
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding-left: 10px;
-  box-sizing: border-box;
+  flex-direction: column;
 }
-.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .evaluaterCarousel .evaH4 {
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_top {
   width: 100%;
   height: 60px;
+  text-align: left;
   color: RGB(151, 204, 35);
+  font-size: 40px;
 }
-.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .evaluaterCarousel .evaH4 h4 {
-  font-size: 30px;
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid {
+  width: auto;
+  height: 250px;
+  padding-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .evaluaterCarousel .evaCarousel {
-  width: 750px;
-  height: 271px;
-  background-color: bisque;
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid .eva_mid_d {
+  width: 360px;
+  height: 100%;
+  display: inline-block;
+  margin-right: 15px;
+  overflow: hidden;
 }
-.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .evaluaterCarousel .evaCarousel .evaCarouselBox {
-  width: 315px;
-  height: 271px;
-  background-color: red;
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid .eva_mid_d .emid_d_co {
+  width: auto;
+  height: 150px;
+  margin: 0;
+  padding: 30px 40px 0 30px;
+  white-space: normal;
+  color: black;
+  font-size: 14px;
+  background-color: white;
+  box-sizing: border-box;
+  line-height: 30px;
 }
-.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .evaluaterCarousel .evaRight {
-  width: 100%;
-  text-align: right;
-  font-size: 16px;
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid .eva_mid_d .emid_d_im {
+  width: auto;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
 }
-.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .evaluaterCarousel .evaRight > div {
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid .eva_mid_d .emid_d_im .emid_dim_d {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid .eva_mid_d .emid_d_im .emid_dim_d .emid_d_1 {
+  font-size: 18px;
+  color: RGB(22, 169, 239);
+}
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid .eva_mid_d .emid_d_im .emid_dim_d .emid_d_2 {
+  font-size: 14px;
+  color: white;
+}
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid .eva_mid_d .emid_d_im .emid_dim_d address {
+  padding: 0 5px;
+}
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_mid .eva_mid_d .emid_d_im img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_bot {
+  width: auto;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.evaluate .evaluateOutBox .evaluateBox .evaluateContentBox .eva_main .eva_bot .e_bot_com {
   width: 40px;
   height: 40px;
-  line-height: 40px;
+  border: 2px solid RGB(151, 204, 35);
+  color: white;
+  font-size: 25px;
+  vertical-align: middle;
   text-align: center;
-  display: inline-block;
-  font-size: 30px;
-  border: 1px solid RGB(151, 204, 35);
-  color: RGB(222, 222, 222);
+  margin-left: 15px;
 }/*# sourceMappingURL=main.css.map */
